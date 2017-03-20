@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/header_cover_image"
+            android:src="@mipmap/homebanner"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop" />
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_cover_image"
+            android:elevation="4dp"
+            android:paddingBottom="24dp">
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:orientation="vertical"
+                android:layout_margin="12dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/medicationsection"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Medication Reminder"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#000"/>
+
+                    <LinearLayout
+                    android:layout_below="@+id/medcationLayer1"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <LinearLayout android:layout_weight="1" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="0dp">
+                        <CheckBox
+                            android:id="@+id/checkBox4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="Tablet 4"
+                            android:textStyle="bold"
+                            android:buttonTint="@color/colorPrimary"
+                            />
+                    </LinearLayout>
+                    <LinearLayout android:layout_weight="1" android:layout_height="fill_parent" android:layout_width="0dp">
+                        <CheckBox
+                            android:id="@+id/checkBox5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="Tablet 5"
+                            android:textStyle="bold"
+                            android:buttonTint="@color/colorPrimary"
+                            />
+                    </LinearLayout>
+                    <LinearLayout android:layout_weight="1" android:layout_height="fill_parent" android:layout_width="0dp">
+                        <CheckBox
+                            android:id="@+id/checkBox6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="Tablet 6"
+                            android:textStyle="bold"
+                            android:buttonTint="@color/colorPrimary"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/medcationLayer1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/medicationsection"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true">
+
+                        <LinearLayout android:layout_weight="1" android:orientation="horizontal" android:layout_height="fill_parent" android:layout_width="0dp">
+                            <CheckBox
+                                android:id="@+id/checkBox1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="4dp"
+                                android:layout_marginBottom="2dp"
+                                android:textStyle="bold"
+                                android:text="Tablet 1"
+                                android:buttonTint="@color/colorPrimary"
+                                />
+                        </LinearLayout>
+                        <LinearLayout android:layout_weight="1" android:layout_height="fill_parent" android:layout_width="0dp">
+                            <CheckBox
+                                android:id="@+id/checkBox2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="4dp"
+                                android:layout_marginBottom="2dp"
+                                android:text="Tablet 2"
+                                android:textStyle="bold"
+                                android:buttonTint="@color/colorPrimary"
+                                />
+                        </LinearLayout>
+                        <LinearLayout android:layout_weight="1" android:layout_height="fill_parent" android:layout_width="0dp">
+                            <CheckBox
+                                android:id="@+id/checkBox3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="4dp"
+                                android:layout_marginBottom="2dp"
+                                android:textStyle="bold"
+                                android:text="Tablet 3"
+                                android:buttonTint="@color/colorPrimary"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/profile_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_layout"
+            android:elevation="4dp"
+            android:paddingBottom="24dp">
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:orientation="vertical"
+                android:layout_margin="12dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/appointmenthistory"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_height="wrap_content"
+                        android:text="Appointment History"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#000"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:paddingBottom="@dimen/activity_vertical_margin"
+                        android:paddingTop="@dimen/activity_vertical_margin">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/user_profile_photo"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/avatar"
+                            android:elevation="2dp"
+                            android:padding="8dp"
+                            android:layout_marginLeft="3dp"
+                            app:civ_border_width="1dp"
+                            app:civ_border_color="#FF000000"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+
+                            <TextView
+                                android:id="@+id/TVUserName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:textColor="#000"
+                                android:text="Doctor 1"
+                                android:textStyle="bold"
+                                android:textSize="16dp"
+                                android:layout_marginLeft="10dp"/>
+                            <TextView
+                                android:id="@+id/TVUserDob"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:textColor="#000"
+                                android:textStyle="bold"
+                                android:text="Hospital"
+                                android:textSize="12dp"
+                                android:layout_marginLeft="10dp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:orientation="vertical"
+                            android:layout_marginRight="10dp">
+
+                            <ImageView
+                                android:id="@+id/topUserFanTeam"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/next"
+                                android:layout_marginTop="15dp"
+                                android:padding="5dp"
+                                android:layout_marginLeft="65dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

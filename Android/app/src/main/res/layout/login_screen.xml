@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/loginhub"
+    tools:context="com.merclain.hackthon.Login.Signup">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:foregroundGravity="center_vertical"
+        android:overScrollMode="ifContentScrolls">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp" />
+
+            <EditText
+                android:id="@+id/ETSigninbhamashahID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#2196F3"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="Bhamashah ID"
+                android:inputType="textEmailAddress"
+                android:padding="20dp"
+                android:textColor="#2196F3"
+                android:textColorHint="#2196F3"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/ETSigninPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="20dp"
+                android:textColor="#2196F3"
+                android:textColorHint="#2196F3"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/loginBtnComit"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.05"
+                android:background="@drawable/button_bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="SIGN IN"
+                android:textColor="#e91e63"
+                android:textStyle="bold"
+                android:typeface="sans" />
+            <Button
+                android:id="@+id/signUpBtnComit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.05"
+                android:background="@drawable/button_bg"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="SIGN UP"
+                android:textColor="#e91e63"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/iplRestPassword"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="Forgot Password ?"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#00897B"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
