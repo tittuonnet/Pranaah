@@ -228,7 +228,7 @@
                             android:layout_marginRight="10dp">
 
                             <ImageView
-                                android:id="@+id/topUserFanTeam"
+                                android:id="@+id/nextButton"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:src="@drawable/next"

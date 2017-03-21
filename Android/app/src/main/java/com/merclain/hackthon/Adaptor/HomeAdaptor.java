@@ -1,12 +1,16 @@
 package com.merclain.hackthon.Adaptor;
 
 import android.content.Context;
+import android.content.Intent;
+import android.media.Image;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.merclain.hackthon.DetailView.MedicalData;
 import com.merclain.hackthon.Model.PranaahList;
 import com.merclain.hackthon.R;
 
@@ -44,6 +48,12 @@ public class HomeAdaptor extends RecyclerView.Adapter<HomeAdaptor.ViewHolder> {
         holder.textViewName.setText(family.getName());
         holder.textViewDOB.setText(family.getDob());
         holder.teamOneGender.setText(family.getGender());
+        holder.pulse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               context.startActivity(new Intent(context, MedicalData.class));
+            }
+        });
 
     }
     @Override
@@ -55,6 +65,7 @@ public class HomeAdaptor extends RecyclerView.Adapter<HomeAdaptor.ViewHolder> {
         public TextView textViewName;
         public TextView textViewDOB;
         public TextView teamOneGender;
+        public ImageView pulse;
         public CircleImageView ProfilePhoto;
         public ViewHolder(View itemView) {
             super(itemView);
@@ -62,6 +73,7 @@ public class HomeAdaptor extends RecyclerView.Adapter<HomeAdaptor.ViewHolder> {
             textViewName = (TextView) itemView.findViewById(R.id.TVUserName);
             textViewDOB = (TextView) itemView.findViewById(R.id.TVUserDob);
             teamOneGender = (TextView) itemView.findViewById(R.id.tvUserGender);
+            pulse = (ImageView) itemView.findViewById(R.id.userMedicalId);
         }
 
     }

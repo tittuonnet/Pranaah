@@ -22,7 +22,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.merclain.hackthon.DetailView.MedicalData;
 import com.merclain.hackthon.Login.Login;
+import com.merclain.hackthon.NavItem.BloodDonation;
+import com.merclain.hackthon.NavItem.CrowdSourcing;
+import com.merclain.hackthon.NavItem.DoctorsList;
+import com.merclain.hackthon.NavItem.EmergencyNumbers;
+import com.merclain.hackthon.NavItem.HospitalsList;
+import com.merclain.hackthon.NavItem.Insurance;
+import com.merclain.hackthon.NavItem.OnlineMedicalStores;
 import com.merclain.hackthon.Screen.Health;
 import com.merclain.hackthon.Screen.History;
 import com.merclain.hackthon.Screen.Home;
@@ -50,8 +58,7 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                startActivity(new Intent(MainActivity.this,appoinment.class));
             }
         });
 
@@ -67,7 +74,7 @@ public class MainActivity extends AppCompatActivity
         View header = navigationView.getHeaderView(0);
         SharedPreferences sharedPreferences = getSharedPreferences(PranaPreferences.SHARED_PREF_NAME, Context.MODE_PRIVATE);
         TVusername = (TextView) header.findViewById(R.id.welcomeUser);
-        TVusername.setText("Welcome "+sharedPreferences.getString(PranaPreferences.Prana_Name_English,""));
+        TVusername.setText("Welcome "+sharedPreferences.getString(PranaPreferences.Prana_Name_English,"")+" !");
 
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);
@@ -159,14 +166,23 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        if (id == R.id.nav_medicalStores) {
+            startActivity(new Intent(this, OnlineMedicalStores.class));
+        }else if (id == R.id.nav_appointment) {
+            startActivity(new Intent(this, appoinment.class));
+        }else if (id == R.id.nav_medicalId) {
+            startActivity(new Intent(this, MedicalData.class));
+        } else if (id == R.id.nav_payment) {
+            startActivity(new Intent(this, Insurance.class));
+        }else if (id == R.id.blood_donation) {
+            startActivity(new Intent(this, BloodDonation.class));
+        }else if (id == R.id.treatment_status) {
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_logout) {
+        }else if (id == R.id.emergancy_numbers) {
+            startActivity(new Intent(this, EmergencyNumbers.class));
+        }else if (id == R.id.nav_crowdsourcing) {
+            startActivity(new Intent(this, CrowdSourcing.class));
+        }else if (id == R.id.nav_logout) {
             SharedPreferences sharedPreferences = this.getSharedPreferences(PranaPreferences.SHARED_PREF_NAME, Context.MODE_PRIVATE);
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putString(PranaPreferences.Prana_Name_BhaId, "");

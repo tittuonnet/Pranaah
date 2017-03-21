@@ -18,7 +18,7 @@
         <ImageView
             android:id="@+id/header_cover_image"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="120dp"
             android:scaleType="centerCrop" />
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -63,6 +63,18 @@
                 android:textColor="#000"
                 android:layout_alignParentLeft="true"/>
 
+            <ImageView
+                android:id="@+id/BloodDoner"
+                android:layout_below="@+id/familyCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="16dp"
+                android:background="@mipmap/syringe"
+                android:textSize="25dp"
+                android:textColor="#000"
+                android:layout_alignParentLeft="true"/>
+
             <TextView
                 android:id="@+id/matchReferralLabel"
                 android:layout_width="wrap_content"
@@ -79,6 +91,19 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="35dp"
                 android:layout_marginTop="16dp"
+                android:textSize="25dp"
+                android:textColor="#000"
+                android:text="60%"
+                android:layout_alignParentRight="true"/>
+
+            <ImageView
+                android:id="@+id/OrganDoner"
+                android:layout_below="@+id/familyCare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="16dp"
+                android:background="@mipmap/heartoutlined"
                 android:textSize="25dp"
                 android:textColor="#000"
                 android:text="60%"
@@ -111,18 +136,19 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/TVUserDOB"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="8dp"
                 android:textColor="#000"
                 android:textSize="14sp" />
 
             <android.support.v7.widget.RecyclerView
+                android:layout_below="@+id/TVUserAdhar"
                 android:id="@+id/recyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/TVUserAdhar"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true">
             </android.support.v7.widget.RecyclerView>
+
         </RelativeLayout>
     </RelativeLayout>
 </ScrollView>

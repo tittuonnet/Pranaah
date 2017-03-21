@@ -25,7 +25,7 @@
         <activity
             android:name=".Login.Login"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Login.Signup"
             android:configChanges="orientation"
@@ -40,6 +40,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".treatmentHistory" />
+        <activity android:name=".appoinment" />
+        <activity android:name=".NavItem.CrowdSourcing" />
+        <activity android:name=".NavItem.HospitalsList" />
+        <activity android:name=".NavItem.DoctorsList" />
+        <activity android:name=".NavItem.OnlineMedicalStores" />
+        <activity android:name=".NavItem.Insurance" />
+        <activity android:name=".NavItem.BloodDonation" />
+        <activity android:name=".NavItem.EmergencyNumbers" />
+        <activity android:name=".DetailView.MedicalData"></activity>
     </application>
 
 </manifest>

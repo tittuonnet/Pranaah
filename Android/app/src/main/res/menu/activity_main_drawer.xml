@@ -3,17 +3,41 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_medicalId"
+            android:icon="@mipmap/crowdsourcing"
+            android:title="Medical ID" />
+
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/nav_medicalStores"
+            android:icon="@drawable/ic_add_shopping_cart_black_24dp"
+            android:title="Online Medical Stores" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/ic_payment_black_24dp"
+            android:title="Insurance + Payment" />
+        <item
+            android:id="@+id/blood_donation"
+            android:icon="@mipmap/donation"
+            android:title="Blood Bank" />
+        <item
+            android:id="@+id/nav_appointment"
+            android:icon="@mipmap/appoinmt"
+            android:title="Appointment" />
+
+        <item
+            android:id="@+id/nav_crowdsourcing"
+            android:icon="@mipmap/crowdsourcing"
+            android:title="Crowd Sourcing" />
+
+        <item
+            android:id="@+id/treatment_status"
+            android:icon="@drawable/ic_spa_black_24dp"
+            android:title="Treatment Status" />
+
+        <item
+            android:id="@+id/emergancy_numbers"
+            android:icon="@drawable/ic_call_black_24dp"
+            android:title="Emergency Numbers" />
         <item
             android:id="@+id/nav_logout"
             android:icon="@drawable/ic_https_grey_24dp"

@@ -8,5 +8,10 @@
     <string name="base_url">http://parkitapp.cloudapp.net/RajHack/</string>
     <string name="signup_bhid">Bhamashah ID</string>
     <string name="familyMembers">Family Unit</string>
-    <string name="familyCare">Family Care</string>>
+    <string name="familyCare">Family Care</string>
+    <string name="prompt_firstname">First Name</string>
+    <string name="prompt_lastname">Last Name</string>
+    <string name="prompt_phonenumber">Phone Number</string>
+    <string name="hospital">Hospital</string>
+    <string name="doctorName">Doctor</string>>
 </resources>
